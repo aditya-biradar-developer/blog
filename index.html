@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources and Insights - Aditya's Blog</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <div class="logo-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="logo-icon">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <circle cx="12" cy="8" r="2"></circle>
+                        <path d="M12 14v4"></path>
+                    </svg>
+                    <span class="logo-text">YourBlog</span>
+                </div>
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><a class="dropdown-item" href="#" data-category="design">Design</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="product">Product</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="software-development">Software Development</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="management">Management</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="podcast">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="#" data-category="business">Business</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" data-category="all">All Categories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 col-md-10">
+                    <h1 class="hero-title">Resources and Insights</h1>
+                    <p class="hero-subtitle">The latest industry news, interviews, technologies, and resources.</p>
+                    
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="search-wrapper">
+                            <input type="text" class="form-control search-input" placeholder="Search articles..." id="searchInput">
+                            <button class="btn search-btn" type="button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row g-4" id="blogGrid">
+                <!-- Blog Card 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image1.jpeg" alt="UX review presentations" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Design</span>
+                            <h3 class="card-title">UX review presentations</h3>
+                            <p class="card-description">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                            <div class="author-info">
+                                <img src="./image2.jpeg" alt="Olivia Rhye" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Olivia Rhye</span>
+                                    <span class="post-date">20 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image3.jpeg" alt="Migrating to Linear 101" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Product</span>
+                            <h3 class="card-title">Migrating to Linear 101</h3>
+                            <p class="card-description">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+                            <div class="author-info">
+                                <img src="./image4.jpeg" alt="Phoenix Baker" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Phoenix Baker</span>
+                                    <span class="post-date">19 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image5.jpeg" alt="Building your API Stack" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Software Development</span>
+                            <h3 class="card-title">Building your API Stack</h3>
+                            <p class="card-description">The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.</p>
+                            <div class="author-info">
+                                <img src="./image6.jpeg" alt="Lana Steiner" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Lana Steiner</span>
+                                    <span class="post-date">18 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image7.jpeg" alt="Bill Walsh leadership lessons" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Management</span>
+                            <h3 class="card-title">Bill Walsh leadership lessons</h3>
+                            <p class="card-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
+                            <div class="author-info">
+                                <img src="./image8.jpeg" alt="Alec Whitten" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Alec Whitten</span>
+                                    <span class="post-date">17 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image9.png" alt="PM mental models" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Product</span>
+                            <h3 class="card-title">PM mental models</h3>
+                            <p class="card-description">Mental models are simple expressions of complex processes or relationships.</p>
+                            <div class="author-info">
+                                <img src="./image10.jpg" alt="Demi Wilkinson" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Demi Wilkinson</span>
+                                    <span class="post-date">16 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image6.jpeg" alt="What is Wireframing?" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Design</span>
+                            <h3 class="card-title">What is Wireframing?</h3>
+                            <p class="card-description">Introduction to wireframing and its principles. Learn from the best in the industry.</p>
+                            <div class="author-info">
+                                <img src="./image7.jpeg" alt="Candice Wu" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Candice Wu</span>
+                                    <span class="post-date">15 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 7 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image8.jpeg" alt="How collaboration makes us better designers" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Design</span>
+                            <h3 class="card-title">How collaboration makes us better designers</h3>
+                            <p class="card-description">Collaboration can make our teams stronger, and our individual designs better.</p>
+                            <div class="author-info">
+                                <img src="./image1.jpeg" alt="Natali Craig" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Natali Craig</span>
+                                    <span class="post-date">14 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 8 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image5.jpeg" alt="Our top 10 Javascript frameworks to use" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Software Development</span>
+                            <h3 class="card-title">Our top 10 Javascript frameworks to use</h3>
+                            <p class="card-description">JavaScript frameworks make development easier with well-tested functionality.</p>
+                            <div class="author-info">
+                                <img src="./image2.jpeg" alt="Drew Cano" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Drew Cano</span>
+                                    <span class="post-date">13 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 9 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="card-image">
+                            <img src="./image4.jpeg" alt="Podcast: Creating a better CX Community" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">Podcast</span>
+                            <h3 class="card-title">Podcast: Creating a better CX Community</h3>
+                            <p class="card-description">Starting a community doesn't need to be complicated, but how do you get started?</p>
+                            <div class="author-info">
+                                <img src="./image10.jpg" alt="Orlando Diggs" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Orlando Diggs</span>
+                                    <span class="post-date">12 Jan 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-load-more" id="loadMoreBtn">Load More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text">&copy; 2025 YourBlog. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
